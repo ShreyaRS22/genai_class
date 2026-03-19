@@ -3,90 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TERRA | The Future of Urban Sustainability</title>
+    <title>Sanji | The Community Fridge Network</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
-        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased selection:bg-amber-500 selection:text-white">
 
-    <nav class="fixed w-full z-50 glass-panel p-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-widest text-emerald-400">TERRA</div>
-            <a href="#ask" class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-full font-semibold transition">Invest</a>
+    <nav class="fixed w-full z-50 glass px-6 py-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-amber-500">Sanji<span class="text-white">.</span></div>
+            <a href="#invest" class="bg-white text-slate-900 px-5 py-2 rounded-full font-bold text-sm hover:bg-amber-400 hover:text-slate-900 transition-all">Partner With Us</a>
         </div>
     </nav>
 
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center">
-            <div class="lg:w-1/2 lg:pr-12 text-center lg:text-left">
-                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-                    Impact Over <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500">Convenience.</span>
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden border-b border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-block px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-bold tracking-wide uppercase mb-6">Seed Round: B2B2C Scalability</div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-6">
+                    Share the Surplus. <br>
+                    <span class="bg-gradient-to-r from-amber-400 to-orange-500 gradient-text">Feed the Community.</span>
                 </h1>
-                <p class="text-xl text-slate-300 mb-8 leading-relaxed">
-                    Meet the TERRA Neural Cycler. We are transforming urban food waste into measurable environmental impact through functional, disruptive technology.
+                <p class="text-xl text-slate-400 mb-8 leading-relaxed font-light">
+                    Sanji is a smart-ecosystem for high-density apartment complexes. We combine an IoT-enabled inventory app with a Community-Led Hub to bridge the gap between household waste and urban need.
                 </p>
-                <a href="#ask" class="inline-block border border-emerald-400 text-emerald-400 hover:bg-emerald-400 hover:text-slate-900 px-8 py-3 rounded-full font-bold transition text-lg">Partner With Us</a>
+                <a href="#invest" class="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-900 px-8 py-4 rounded-full font-bold transition shadow-[0_0_30px_rgba(245,158,11,0.3)]">Explore the GTM Strategy</a>
             </div>
-            <div class="lg:w-1/2 mt-12 lg:mt-0">
-                <img src="Gemini_Generated_Image_hz665hhz665hhz66.png" alt="TERRA Neural Cycler" class="rounded-2xl shadow-2xl border border-slate-700">
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-slate-900">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div>
-                    <img src="Gemini_Generated_Image_slcya4slcya4slcy.png" alt="EcoShare App Interface" class="rounded-2xl shadow-xl">
-                </div>
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">The Problem & The Paradigm Shift</h2>
-                    <p class="text-slate-400 mb-6 text-lg">
-                        Urban households waste millions of tons of food annually. Current solutions are passive and unquantifiable. TERRA introduces a data-driven ecosystem consisting of a smart home device and the EcoShare community platform.
-                    </p>
-                    <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-start">
-                            <span class="text-emerald-400 mr-3">✓</span>
-                            <span><strong>Proprietary Hardware:</strong> Elegant, odor-free composting with real-time carbon mitigation tracking.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-emerald-400 mr-3">✓</span>
-                            <span><strong>AI-Powered Software:</strong> The EcoShare app predicts waste, suggests recipes, and seamlessly routes surplus to local community centers.</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                <img src="Gemini_Generated_Image_hz665hhz665hhz66.png" alt="Sanji Community Hub" class="relative rounded-2xl shadow-2xl border border-slate-700 w-full object-cover">
             </div>
         </div>
     </section>
 
-    <section id="ask" class="py-24 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center glass-panel p-12 rounded-3xl">
-            <h2 class="text-4xl font-bold mb-6">The Ask: $2.5M Seed Round</h2>
-            <p class="text-xl text-slate-300 mb-10">
-                We are raising capital to accelerate our Go-To-Market strategy and scale our Gen-AI backend infrastructure. Join us in capturing the rapidly expanding urban sustainability market.
+    <section class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1 relative">
+                <div class="absolute -inset-4 bg-slate-800/50 rounded-3xl transform -rotate-3"></div>
+                <img src="Gemini_Generated_Image_jm29yujm29yujm29.png" alt="Sanji App Interface" class="relative rounded-2xl shadow-xl border border-slate-700 w-full">
+            </div>
+            <div class="order-1 lg:order-2">
+                <div class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-2">Phase 1: Household Level</div>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">The Smart Inventory Manager</h2>
+                <p class="text-slate-400 text-lg mb-8">
+                    Tackling "forgotten" perishables in deep refrigerators before they become waste.
+                </p>
+                <div class="space-y-6">
+                    <div class="glass p-5 rounded-xl">
+                        <h4 class="font-bold text-white mb-1 flex items-center"><span class="w-2 h-2 rounded-full bg-amber-500 mr-2"></span> Receipt-to-Inventory (OCR)</h4>
+                        <p class="text-sm text-slate-400 pl-4">Snap a Blinkit or Zepto invoice. Sanji auto-logs items and estimates shelf life.</p>
+                    </div>
+                    <div class="glass p-5 rounded-xl">
+                        <h4 class="font-bold text-white mb-1 flex items-center"><span class="w-2 h-2 rounded-full bg-amber-500 mr-2"></span> "Eat This First" Alerts</h4>
+                        <p class="text-sm text-slate-400 pl-4">Push notifications suggest localized recipes (e.g., Palak Paneer) for wilting greens.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-950 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <div class="text-orange-500 font-bold tracking-widest uppercase text-sm mb-2">Phase 2: Community Level</div>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">The Surplus Sharing Protocol</h2>
+                <p class="text-slate-400 text-lg mb-6">
+                    Moving beyond management to structured, safe donation of cooked surplus within the society network.
+                </p>
+                <ul class="space-y-5 text-slate-300">
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 mt-1 mr-4 text-orange-400">⚡</div>
+                        <div>
+                            <strong class="text-white block">The Sanji Board</strong>
+                            <span class="text-sm text-slate-400">List extra portions securely on a building-exclusive digital noticeboard.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 mt-1 mr-4 text-orange-400">⚡</div>
+                        <div>
+                            <strong class="text-white block">Standardized QR-Packaging</strong>
+                            <span class="text-sm text-slate-400">BPA-free reusable containers. Scan the lid to log cooking time and allergens.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img src="Gemini_Generated_Image_voul1gvoul1gvoul.png" alt="Family using Sanji" class="rounded-2xl shadow-xl border border-slate-800 w-full">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <img src="Gemini_Generated_Image_slcya4slcya4slcy.png" alt="Sanji Smart Hub" class="rounded-2xl shadow-xl border border-slate-800 w-full">
+            </div>
+            <div class="order-1 lg:order-2">
+                <div class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-2">Phase 3: Impact</div>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">Dignified Distribution</h2>
+                <p class="text-slate-400 text-lg mb-8">
+                    Replacing chaotic hand-offs with a structured, UV-sanitized locker system for community workers and partnered NGOs.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-950 border border-slate-800 p-4 rounded-lg text-center">
+                        <div class="text-amber-400 font-bold mb-1">Verified Access</div>
+                        <div class="text-xs text-slate-500">NFC Cards for Staff</div>
+                    </div>
+                    <div class="bg-slate-950 border border-slate-800 p-4 rounded-lg text-center">
+                        <div class="text-orange-400 font-bold mb-1">Live Alerts</div>
+                        <div class="text-xs text-slate-500">SMS / LED Hub Pings</div>
+                    </div>
+                    <div class="bg-slate-950 border border-slate-800 p-4 rounded-lg text-center col-span-2">
+                        <div class="text-amber-500 font-bold mb-1">Feedback Loop</div>
+                        <div class="text-xs text-slate-500">Digital gratitude tokens fostering building-wide trust & gamified leaderboards.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="invest" class="py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900 to-amber-900/20"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 glass p-12 rounded-3xl border border-amber-500/20">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-4">The Ask: $2.5M Seed</h2>
+            <p class="text-lg text-slate-300 mb-10 max-w-2xl mx-auto">
+                Capital will drive hardware manufacturing for the Smart Hubs and accelerate our GTM strategy. Revenue is secured via monthly society SLAs and FMCG brands sponsoring hubs to hit ESG targets.
             </p>
             
-            <form class="space-y-6 max-w-md mx-auto text-left">
+            <form class="space-y-4 max-w-md mx-auto text-left">
                 <div>
-                    <label class="block text-sm font-medium text-slate-300 mb-1">Name / Firm</label>
-                    <input type="text" class="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:outline-none text-white">
+                    <input type="text" placeholder="Name / VC Firm" class="w-full px-5 py-4 bg-slate-950/80 border border-slate-700 rounded-xl focus:ring-2 focus:ring-amber-500 focus:outline-none text-white transition-all">
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-slate-300 mb-1">Email Address</label>
-                    <input type="email" class="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:outline-none text-white">
+                    <input type="email" placeholder="Professional Email Address" class="w-full px-5 py-4 bg-slate-950/80 border border-slate-700 rounded-xl focus:ring-2 focus:ring-amber-500 focus:outline-none text-white transition-all">
                 </div>
-                <button type="button" class="w-full bg-gradient-to-r from-emerald-500 to-cyan-600 hover:from-emerald-400 hover:to-cyan-500 text-white font-bold py-3 px-4 rounded-lg transition shadow-lg">
-                    Request Due Diligence Pack
+                <button type="button" class="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-slate-900 font-bold py-4 px-6 rounded-xl transition-all shadow-lg mt-4 text-lg">
+                    Request Due Diligence Memo
                 </button>
             </form>
         </div>
     </section>
 
-    <footer class="bg-slate-950 py-8 text-center border-t border-slate-800">
-        <p class="text-slate-500">© 2026 TERRA Sustainability Inc. All rights reserved.</p>
+    <footer class="bg-slate-950 py-8 border-t border-slate-900 text-center text-slate-600 text-sm">
+        <p>© 2026 Sanji Ecosystems. Built for the future of Indian urban living.</p>
     </footer>
 
 </body>
